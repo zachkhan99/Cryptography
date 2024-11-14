@@ -1,0 +1,73 @@
+GOAL:   The goal of this program is to encode and decode messages from the user.
+        Utilizes while loops, mulitple functions, and for loops with parameters.
+
+INPUT:  0, 1, or 2
+        text to be encoded
+        code to be decyphered
+OUTPUT: user menu
+        diferent responses to the user's choice from the menu
+        encoded message
+        decyphered message
+
+defining main() function:
+    INPUT:  text to be encoded
+            code to be decyphered
+    OUTPUT: different responses to the user:
+            thanks for doing secret spy stuff with me
+            I don't know what you want to do
+
+    STEPS:  1) make a while loop
+            2) have keepGoing = True
+            3) have the program run the menu() function
+            3) have an if statement where if the user inputs a 1,
+                the program will ask for the user to input text to
+                be encoded
+            4) have the program run the encode(plain) function
+            5) have an elif statement where if the user inputs
+                a 2, the program will ask for the user to input
+                text to be decoded
+            6) have the program run the decode(coded) function
+            7) have an elif statement where if the user inputs
+                a 0, the program will output the response a response
+                and end the function
+            8) have an else statement where if the user inputs anything
+                but 1, 2, or 0, the program will respond "i don't know
+                what you want me to do
+
+defining menu() function:
+    INPUT:  0, 1 or 2
+    OUTPUT: the program prints a menu with a title and options
+
+    STEPS:  1) print the title and options
+            2) ask the user to input a response
+            3) end the function and return the user's input to the main() function
+
+defining encode(plain) function:
+    INPUT: the user's plain text
+    OUTPUT: the encoded message
+
+    STEPS:  1) make a blank string to represent the new encoded string
+            2) make a for loop
+            3) make a variable, x, to represent the user's plain text in all caps
+            4) make a nested for loop
+            5) make a different variable, y, represent a letter in alpha
+            6) make this nested for loop conditional so that if the letter from the user's
+                plain text, x,compares to the same letter, y, in alpha, it will find the
+                same position of alpha in key.
+            7) add this letter to the encoded string until all characters are encoded
+            8) end the function and return this encoded string to the main function
+
+defining decode(coded) function:
+    INPUT: user's encoded message
+    OUTPUT: the decoded message
+
+    STEPS:  1) make a blank string to represent the new decoded string
+            2) make a for loop
+            3) make a variable, x, to represent the user's coded text in all caps
+            4) make a nested for loop
+            5) make a different variable, y, represent a letter in alpha
+            6) make this nested for loop conditional so that if the letter from the user's
+                coded text, x,compares to the same letter, y, in alpha, it will find the
+                same position of alpha in key.
+            7) add this letter to the decoded string until all characters are decoded
+            8) end the function and return this decoded string to the main function
