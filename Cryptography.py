@@ -1,4 +1,6 @@
-""" crypto.py
+""" cryptography.py
+    Zach Khan
+    March 10, 2023
     Implements a simple substitution cypher
 """
 
